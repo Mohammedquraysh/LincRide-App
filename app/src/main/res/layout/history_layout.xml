@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/dr_rounded_white_15"
+    android:paddingTop="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgPickupPinNew"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_location_pin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imgPickupPinNew"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text10RegularGray"
+                    android:text="Pickup Location" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPickupLocation"
+                    style="@style/Text12RegularBlack"
+                    android:layout_marginTop="-2dp"
+                    tools:text="Alfred Rewane Road, Lagos" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="3dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-3dp"
+            android:layout_marginBottom="-3dp"
+            android:src="@drawable/ic_destination_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgDropOffPinNew"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_drop_location_pin" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/imgDropOffPinNew"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/Text10RegularGray"
+                    android:text="Dropoff Location" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvDropoffLocation"
+                    style="@style/Text12RegularBlack"
+                    android:layout_marginTop="-2dp"
+                    android:singleLine="false"
+                    tools:text="Victoria Island,The Avenue Suites, Tiyamu Savage Street,Lagos"
+                    android:textColor="@color/colorBlue" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginHorizontal="4dp"
+                android:src="@drawable/ic_star_fill" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvCustomerName"
+                style="@style/Text10RegularGray"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="Booked Date:" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDate"
+                style="@style/Text12RegularBlack"
+                android:layout_width="wrap_content"
+                android:text="0.0" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

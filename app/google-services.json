@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "99112515172",
+    "project_id": "lincrideapp",
+    "storage_bucket": "lincrideapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99112515172:android:887f4bfc3d695762189171",
+        "android_client_info": {
+          "package_name": "com.example.lincrideapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdt7CMoAZwOzAxw6hvIsGvPeNgtvkB92Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

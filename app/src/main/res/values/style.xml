@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Label Style-->
+    <style name="TextParentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:lineSpacingExtra">-1dp</item>
+        <item name="android:textColorHint">@color/colorTextHint</item>
+    </style>
+    <style name="Text16RegularGray" parent="TextParentStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorGray</item>
+    </style>
+    <style name="Text10RegularGray" parent="Text16RegularGray">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+
+    <style name="Text16MediumBlack" parent="TextParentStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+    <style name="Text12MediumBlack" parent="Text16MediumBlack">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text16RegularBlack" parent="TextParentStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorText</item>
+    </style>
+
+    <style name="Text12RegularBlack" parent="Text16RegularBlack">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+
+    <!--View Border-->
+    <style name="ViewBorderStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorLightGray</item>
+    </style>
+
+
+    <style name="ButtonParentStyle" parent="TextParentStyle">
+        <item name="android:background">@drawable/dr_button_primary_bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="ButtonRedBorderStyle" parent="ButtonParentStyle">
+        <item name="android:background">@drawable/dr_button_primary_red_border</item>
+        <item name="android:textColor">@color/red</item>
+    </style>
+</resources>

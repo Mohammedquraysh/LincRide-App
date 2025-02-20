@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout android:id="@+id/llAcceptRideNewView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/dr_rounded_white_15"
+        android:backgroundTint="@color/colorWhiteBg"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOfferFareRequestNew"
+            style="@style/Text16MediumBlack"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Offer Fare Request"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgAcceptProfileNew"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/ic_rounded_placeholder"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/dr_rounded_white_30"
+            android:elevation="2dp"
+            android:paddingHorizontal="7dp"
+            android:paddingVertical="3dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/ic_start_black" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvRateNew"
+                style="@style/Text12MediumBlack"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="0.0" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvPickupMinNew"
+            style="@style/Text16MediumBlack"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Pickup is 0 min away" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvDistance"
+                style="@style/Text16MediumBlack"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="6 min"
+                android:textSize="24dp" />
+
+
+            <View
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/dr_rounded_white_30"
+                android:backgroundTint="@color/colorText" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvFare"
+                style="@style/Text16MediumBlack"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                tools:text="4.5 km"
+                android:textSize="24dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPickupPinNew"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_location_pin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/imgPickupPinNew"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/Text10RegularGray"
+                        android:text="Pickup Location" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvPickupLocation"
+                        style="@style/Text12RegularBlack"
+                        android:layout_marginTop="-2dp"
+                        tools:text="Alfred Rewane Road, Lagos" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="3dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="-3dp"
+                android:layout_marginBottom="-3dp"
+                android:src="@drawable/ic_destination_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgDropOffPinNew"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_drop_location_pin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/imgDropOffPinNew"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/Text10RegularGray"
+                        android:text="Dropoff Location" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvDropoffLocation"
+                        style="@style/Text12RegularBlack"
+                        android:layout_marginTop="-2dp"
+                        android:singleLine="false"
+                        tools:text="Victoria Island,The Avenue Suites, Tiyamu Savage Street,Lagos"
+                        android:textColor="@color/colorBlue" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginHorizontal="4dp"
+                    android:src="@drawable/ic_star_fill" />
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnAcceptRideNew"
+            style="@style/ButtonParentStyle"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="20dp"
+            android:text="Confirm booking" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/btnCancel"
+            style="@style/ButtonRedBorderStyle"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:text="Cancel" />
+
+    </LinearLayout>
+</layout>

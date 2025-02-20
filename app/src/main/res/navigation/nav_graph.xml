@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mapScreen">
+
+    <fragment
+        android:id="@+id/mapScreen"
+        android:name="com.example.lincrideapp.view.MapScreen"
+        android:label="fragment_map_screen"
+        tools:layout="@layout/fragment_map_screen" />
+    <fragment
+        android:id="@+id/placesScreen"
+        android:name="com.example.lincrideapp.view.PlacesScreen"
+        android:label="fragment_places_screen"
+        tools:layout="@layout/fragment_places_screen" />
+    <fragment
+        android:id="@+id/rideHistoryScreen"
+        android:name="com.example.lincrideapp.view.RideHistoryScreen"
+        android:label="fragment_ride_history_screen"
+        tools:layout="@layout/fragment_ride_history_screen" />
+</navigation>
